@@ -1,0 +1,318 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #F1E5D1;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.upper{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #DBB5B5;
+}
+.upper .show-calc{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.upper .show-calc .calc{
+    border: none;
+    width: 20%;
+    height: 10vh;
+    font-size: 50px;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+.output{
+    border: none;
+    width: 20%;
+    padding-left: 10px;
+    height: 10vh;
+    font-size: 50px;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+.lower{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #F1E5D1;
+}
+.nums{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    width: 50%;
+    height: 50vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.nums-4{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+}
+.nums-4 .one{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.nums-4 .two{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-4 .three{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-4 .four{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-8{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+}
+.nums-8 .five{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-8 .six{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-8 .seven{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-8 .eight{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-10{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+}
+.nums-10 .nine{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.nums-10 .ten{
+    display: flex;
+    flex-direction: row;
+    background-color: #C39898;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signs{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.signs .add{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signs .sub{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signs .div{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.signs .multi{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.clear-all{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    background-color: #987070;
+    width: 100px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
